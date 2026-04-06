@@ -1,0 +1,21 @@
+# Bobby Плагин Мониторинга
+# Все настройки в данном файле
+
+# Настройки мониторинга
+scan_interval_ticks: 100
+
+# Лимиты для детекторов 
+limits:
+  entity_per_chunk: 50
+  hopper_chain_length: 50
+  redstone:
+    max_changes_per_sec: 15
+  player:
+    speed_limit: 1.5
+  chunk:
+    load_limit_per_sec: 15
+
+# Оповещения
+alerts:
+  threshold_mspt: 45.0
+  discord_webhook_url: ""

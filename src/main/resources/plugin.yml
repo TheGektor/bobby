@@ -1,0 +1,23 @@
+name: Bobby
+version: '${version}'
+main: bobby.core.BobbyPlugin
+api-version: '1.21'
+authors: [ "Antag0nis1" ]
+description: Продвинутая система обнаружения и мониторинга лагов сервера
+
+commands:
+  bobby:
+    description: Основная команда модерации плагина Bobby
+    usage: /bobby <scan|report|lag|entities|redstone|chunks|profiler|debug>
+    permission: bobby.viewer
+
+permissions:
+  bobby.admin:
+    description: "Разрешает полный доступ ко всем функциям Bobby"
+    default: op
+  bobby.moderator:
+    description: "Разрешает сканирование и отчеты"
+    default: op
+  bobby.viewer:
+    description: "Разрешает просматривать аналитику"
+    default: op
